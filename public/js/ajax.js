@@ -28,7 +28,7 @@ function openTrivia() {
     /* Inicializar un objeto AJAX */
     var ajax = objetoAjax();
 
-    ajax.open("GET", "https://opentdb.com/api.php?amount=10&category=11", true);
+    ajax.open("GET", "https://opentdb.com/api.php?amount=10&category=18", true);
     ajax.onreadystatechange = function() {
         if (ajax.readyState == 4 && ajax.status == 200) {
             var respuesta = JSON.parse(this.responseText);
